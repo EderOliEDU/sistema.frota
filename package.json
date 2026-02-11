@@ -1,0 +1,22 @@
+{
+  "name": "sistema-frota",
+  "version": "1.0.0",
+  "description": "Sistema de Agenda de Condutores - Frota Pública",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "db:test": "node src/db/test.js"
+  },
+  "keywords": ["frota", "motoristas", "demandas"],
+  "author": "EderOliEDU",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.10.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
