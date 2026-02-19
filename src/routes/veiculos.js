@@ -1,4 +1,3 @@
-cat > src/routes/veiculos.js << 'EOF'
 const express = require('express');
 const router = express.Router();
 const VeiculoController = require('../controllers/veiculoController');
@@ -12,4 +11,3 @@ router.put('/:id', VeiculoController.atualizar);
 router.delete('/:id', VeiculoController.deletar);
 
 module.exports = router;
-EOF
