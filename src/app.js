@@ -1,4 +1,3 @@
-cat src/app.js << 'EOF'
 const express = require('express');
 require('dotenv').config();
 
@@ -27,4 +26,3 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
-EOF
