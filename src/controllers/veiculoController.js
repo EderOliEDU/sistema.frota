@@ -1,4 +1,3 @@
-cat > src/controllers/veiculoController.js << 'EOF'
 const Veiculo = require('../models/veiculo');
 
 class VeiculoController {
@@ -103,4 +102,3 @@ class VeiculoController {
 }
 
 module.exports = VeiculoController;
-EOF
