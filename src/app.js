@@ -1,24 +1,12 @@
 const express = require('express');
-require('dotenv').config();
-
 const app = express();
 
-// Middleware
-app.use(express.json());
+// Import motoristas and veiculos routes
+const motoristasRoutes = require('./routes/motoristas');
+const veiculosRoutes = require('./routes/veiculos');
 
-// Routes
-const demandas = require('./routes/demandas');
-
-app.use('/api/demandas', demandas);
-
-// Health check
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok' });
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor rodando na porta ${PORT}`);
-});
+// Use the routes
+app.use('/api/motoristas', motoristasRoutes);
+app.use('/api/veiculos', veiculosRoutes);
 
 module.exports = app;
