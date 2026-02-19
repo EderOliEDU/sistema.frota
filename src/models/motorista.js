@@ -1,4 +1,3 @@
-cat > src/models/motorista.js << 'EOF'
 const db = require('../db');
 
 class Motorista {
@@ -92,4 +91,3 @@ class Motorista {
 }
 
 module.exports = Motorista;
-EOF
