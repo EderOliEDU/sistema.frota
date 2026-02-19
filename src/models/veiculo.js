@@ -1,4 +1,3 @@
-cat > src/models/veiculo.js << 'EOF'
 const db = require('../db');
 
 class Veiculo {
@@ -98,4 +97,3 @@ class Veiculo {
 }
 
 module.exports = Veiculo;
-EOF
