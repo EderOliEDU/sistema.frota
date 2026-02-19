@@ -1,4 +1,3 @@
-cat > src/routes/motoristas.js << 'EOF'
 const express = require('express');
 const router = express.Router();
 const MotoristaController = require('../controllers/motoristaController');
@@ -12,4 +11,3 @@ router.put('/:id', MotoristaController.atualizar);
 router.delete('/:id', MotoristaController.deletar);
 
 module.exports = router;
-EOF
