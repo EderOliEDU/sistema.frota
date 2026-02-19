@@ -1,4 +1,3 @@
-cat > src/controllers/motoristaController.js << 'EOF'
 const Motorista = require('../models/motorista');
 
 class MotoristaController {
@@ -101,4 +100,3 @@ class MotoristaController {
 }
 
 module.exports = MotoristaController;
-EOF
