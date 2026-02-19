@@ -1,4 +1,4 @@
-cat > src/app.js << 'EOF'
+cat src/app.js << 'EOF'
 const express = require('express');
 require('dotenv').config();
 
